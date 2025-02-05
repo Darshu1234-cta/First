@@ -1,0 +1,43 @@
+<mvc:View controllerName="app.navigation.controller.salesOrderView"
+ 
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    
+    <Page id="page2" title="{i18n>title2}">
+
+    <content>
+                        <Table items="{SOModel>/results}">
+                            <columns>
+                                <Column>
+                                    <Text text="CustomerID"></Text>
+                                </Column>
+                                <Column>
+                                    <Text text="CompanyName"></Text>
+                                </Column>
+                                <Column>
+                                    <Text text="Currency"></Text>
+                                </Column>
+                                <Column>
+                                    <Text text="WebAddress"></Text>
+                                </Column>
+                            </columns>
+                            <items>
+                                <ColumnListItem>
+                                    <cells>
+                                        <Text text="{SOModel>CustomerID}"></Text>
+                                        <Text text="{SOModel>CustomerName}"></Text>
+                                        <Text text="{SOModel>CurrencyCode}"></Text>
+                                        <!-- <Input value="{SOModel>CurrencyCode}"
+                                        showValueHelp="true" valueHelpRequest="f4Help"></Input> -->
+                                        <Text text="{SOModel>GrossAmount}"></Text>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+                    </content>
+
+   
+    </Page>
+    
+</mvc:View>
+

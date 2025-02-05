@@ -1,0 +1,93 @@
+{
+    "toolsData":[{
+        "id": "101",
+        "name": "Plier",
+        "description": "A versatile hand tool used for gripping and bending materials.",
+        "price": 15.99,
+        "currency": "USD",
+        "status": "available",
+            "weight": "2kg",
+        "icon": "https://m.media-amazon.com/images/I/61qJ485KguL._SL1500_.jpg"
+    }, {
+        "id": "102",
+        "name": "Mitre Saw",
+        "description": "A power tool for making precise crosscuts and miters in wood and other materials.",
+        "price": 129.99,
+        "currency": "USD",
+        "status": "available",
+            "weight": "22kg",
+        "icon": "https://ts2.mm.bing.net/th?id=OIP.F967qw7gBAcQzo9wvvOcaAHaHa&pid=15.1"
+    }, {
+        "id": "103",
+        "name": "Angle Grinder",
+        "description": "A handheld power tool used for grinding, cutting, and polishing.",
+        "price": 79.50,
+        "currency": "USD",
+        "status": "out of stock",
+            "weight": "18kg",
+        "icon": "https://th.bing.com/th/id/OIP.ZTlangjOPVLb1cYQDcGDswHaHa?w=188&h=188&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    }, {
+        "id": "104",
+        "name": "Drill Electric",
+        "description": "An electric-powered drill for making holes in various materials.",
+        "price": 49.99,
+        "currency": "USD",
+        "status": "available",
+            "weight": "22kg",
+        "icon": "https://th.bing.com/th/id/OIP.d6oegRIL5KXBwZKQKThI7wHaHa?w=197&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    }, {
+        "id": "105",
+        "name": "Cordless Drill",
+        "description": "A rechargeable drill offering mobility and ease of use.",
+        "price": 89.99,
+        "currency": "USD",
+        "status": "available",
+            "weight": "22kg",
+        "icon": "https://th.bing.com/th/id/OIP.RzbHHwgOlLvqh_5qOusIWwHaIL?w=185&h=205&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    }, {
+        "id": "106",
+        "name": "Welding Machine",
+        "description": "A device used for fusing metal parts together using heat.",
+        "price": 299.99,
+        "currency": "USD",
+        "status": "out of stock",
+            "weight": "22kg",
+        "icon": "https://th.bing.com/th/id/OIP.2h5k85DiT_tCBLLEXGzFQwHaHa?w=198&h=198&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    }, {
+        "id": "107",
+        "name": "Hand Saw",
+        "description": "A manually operated saw for cutting wood and other materials.",
+        "price": 22.50,
+        "currency": "USD",
+        "status": "available",
+            "weight": "22kg",
+        "icon": "https://th.bing.com/th/id/OIP.y4pPEPZommveEUX98oEv5AAAAA?w=212&h=211&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    }, {
+        "id": "108",
+        "name": "Tiles Cutter",
+        "description": "A specialized tool for cutting ceramic and porcelain tiles.",
+        "price": 59.99,
+        "currency": "USD",
+        "status": "available",
+        "weight": "12kg",
+        "icon": "https://th.bing.com/th/id/OIP.RzbHHwgOlLvqh_5qOusIWwHaIL?w=185&h=205&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    }, {
+        "id": "109",
+        "name": "Wall Putty Mixer",
+        "description": "A machine used for mixing putty and other wall-finishing materials.",
+        "price": 110.00,
+        "currency": "USD",
+        "status": "available",
+        "weight": "15kg",
+        "icon": "https://th.bing.com/th/id/OIP.Af2BdC1hMLJHNWX9nTHQTgHaI2?w=138&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    }, {
+        "id": "110",
+        "name": "Hammer",
+        "description": "A hand tool used for driving nails, breaking objects, and general construction work.",
+        "price": 18.99,
+        "currency": "USD",
+        "status": "available",
+        "weight": "22kg",
+        "icon": "https://th.bing.com/th/id/OIP.wLEM6Df6UD8PyLZseRd8LAHaHa?w=180&h=181&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    }]
+    }
