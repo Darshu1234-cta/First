@@ -1,0 +1,65 @@
+<mvc:View controllerName="app.darshanamining19.controller.miningDetail"
+ xmlns:mvc="sap.ui.core.mvc"
+    xmlns:ui="sap.ui.table"
+    xmlns="sap.m"
+    xmlns:sfb="sap.ui.comp.smartfilterbar"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    >
+ 
+<Page id="page2" title="{i18n>title2}">
+            <VBox id="v1" class="sapUiSmallMargin">
+        <f:SimpleForm id="SimpleFormChange354"
+            editable="true"
+            layout="ResponsiveGridLayout"
+            title="Drill Details"
+            labelSpanXL="3"
+            labelSpanL="3"
+            labelSpanM="3"
+            labelSpanS="12"
+            adjustLabelSpan="false"
+            emptySpanXL="4"
+            emptySpanL="4"
+            emptySpanM="4"
+             emptySpanS="0"
+            columnsXL="1"
+            columnsL="1"
+            columnsM="1"
+            singleContainerFullSize="false" >
+            <f:content>
+                <Label id="L1" text="LOCATION_ID" />
+                <Text  id="name" text="{Routingdetails>/LocationId}" />
+
+                <Label id="L2" text="LOCATION_DES" />
+                <Text id="t1" text="{Routingdetails>/LocationDes}"/>
+
+                <Label id="L3" text="MINING_RSC" />
+                <Text text="{Routingdetails>/MiningRsc}"/>
+
+                <Label  id="L4" text="COST" />
+                <Text id="t2" text="{Routingdetails>/Cost}"/>
+
+                <Label id="L5" text="DRILL_COUNT" />
+                <Text id="t3" text="{Routingdetails>/DrillCount}"/>
+
+                <Label id="L6" text="MineralsFound" />
+                <Text id="t4" text="{Routingdetails>/Minerals}"/>
+
+                <Label id="L7" text="Material Id" />
+                <Text id="t5" text="{Routingdetails>/MaterialId}"/>
+
+                 <Label id="L8" text="MINERAL_TYPE" />
+                <Text id="t6" text="{Routingdetails>/MineralType}"/>
+
+                <Label id="L9" text="Cost Center" />
+                <Text id="t7" text="{Routingdetails>/CostCenter}"/>
+
+                <Label id="L10" text="Date" />
+                <Text  id="t8" text="{Routingdetails>/DrillDate}"/>
+          </f:content>
+        </f:SimpleForm>
+    </VBox>
+ 
+    </Page>
+ 
+</mvc:View>

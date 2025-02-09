@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+ 
+    <SelectDialog items="{fragmentModel>/detail}" confirm="onConfirm">
+        <items>
+            <StandardListItem  title="{fragmentModel>ContractorName}"></StandardListItem>
+        </items>
+    </SelectDialog>
+   
+</core:FragmentDefinition>
+ 
+<!--info="{fragmentModel>LocationID}"-->

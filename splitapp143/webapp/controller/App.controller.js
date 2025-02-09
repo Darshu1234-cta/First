@@ -5,9 +5,9 @@ sap.ui.define([
 
   return BaseController.extend("app.splitapp143.controller.App", {
       onInit() {
-         var oModel=new sap.ui.model.json.JSONModel();
-        oModel.loadData("/model/mockData/toolsData.json"); 
-				this.getView().setModel(oModel,"toolModel");
+        //  var oModel=new sap.ui.model.json.JSONModel();
+        // oModel.loadData("/model/mockData/toolsData.json"); 
+				// this.getView().setModel(oModel,"toolModel");
       }
   });
 });

@@ -1,0 +1,65 @@
+<mvc:View controllerName="app.sprint2.controller.DetailView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core">
+    <Page id="idDet" title="{i18n>detail}">
+            <content>
+            <!--<Button text="{/supplierTab/0/name}"></Button>-->
+            <ObjectHeader icon="{toolModel>icon}" intro="{toolModel>LocationID}" number="{toolModel>TotalCost}"
+                title="{toolModel>LocationName}"></ObjectHeader>
+        </content>
+        <IconTabBar>
+            <items>
+                <IconTabFilter icon="sap-icon://information">
+                    <content>
+                        <f:SimpleForm>
+                            <Label text="LocationID"></Label>
+                            <Text text="{toolModel>LocationID}"></Text>
+                            <Label text="LocationName"></Label>
+                            <Text text="{toolModel>LocationName}"></Text>
+                            <Label text="LocationDescription"></Label>
+                            <Text text="{toolModel>LocationDescription}"></Text>
+                        </f:SimpleForm>
+                    </content>
+                </IconTabFilter>
+                <IconTabFilter icon="sap-icon://supplier">
+                    <content>
+                        <Table items="{/detail}">
+                            <columns>
+                           
+                                <Column>
+                                    <Text text="resources"></Text>
+                                </Column>
+                                <Column>
+                                    <Text text="cost"></Text>
+                                </Column>
+                                <Column>
+                                    <Text text="man_days"></Text>
+                                </Column>
+                                <Column>
+                                    <Text text="ContractorName"></Text>
+                                </Column>
+                                <Column>
+                                    <Text text="probability_of_success"></Text>
+                                </Column>
+                            </columns>
+                            <items>
+                                <ColumnListItem>
+                                    <cells>
+                                        <Text text="{resources}"></Text>
+                                        <Text text="{cost}"></Text>
+                                        <Text text="{man_days}"></Text>
+                                        <Input value="{ContractorName}"
+                                        showValueHelp="true" valueHelpRequest="f4Help"></Input>
+                                        <Text text="{probability_of_success}"></Text>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+                    </content>
+                </IconTabFilter>
+            </items>
+        </IconTabBar>
+    </Page>
+</mvc:View>

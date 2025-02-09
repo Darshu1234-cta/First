@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "app.splitapp143",
+    "id": "app.darshanamining19",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,12 +13,23 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
       "version": "1.16.3",
-      "toolsId": "e18aaee8-c40a-4e1e-8901-a41caab4e860"
+      "toolsId": "41261139-543c-4c6d-a533-2f33b71dead0"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/sap/opu/odata/sap/Z5519_SPRINTMINING_SRV/",  
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "localUri": "localService/metadata.xml",
+          "odataVersion": "2.0"
+        }
+      }
     },
     "crossNavigation": {
       "inbounds": {
-        "toolsapp-display": {
-          "semanticObject": "toolsapp",
+        "Miningodata-display": {
+          "semanticObject": "Miningodata",
           "action": "display",
           "title": "{{flpTitle}}",
           "signature": {
@@ -62,14 +73,14 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "app.splitapp143.i18n.i18n"
+          "bundleName": "app.darshanamining19.i18n.i18n"
         }
       },
-      "toolModel":{
-        "type": "sap.ui.model.json.JSONModel",
-        "uri": "/model/mockData/toolsData.json"
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {}
       }
- 
     },
     "resources": {
       "css": [
@@ -86,54 +97,56 @@
         "transition": "slide",
         "type": "View",
         "viewType": "XML",
-        "path": "app.splitapp143.view",
+        "path": "app.darshanamining19.view",
         "async": true,
-        "viewPath": "app.splitapp143.view"
+        "viewPath": "app.darshanamining19.view"
       },
       "routes": [
         {
-          "name": "RouteListItemsView",
-          "pattern": "",
+          "name": "RouteView1",
+          "pattern": ":?query:",
           "target": [
-            "TargetListItemsView","TargetEmptyView"
+            "TargetView1"
           ]
         },
         {
-          "name": "RouteDetail",
-          "pattern": "detail/{ind}",
-          "target": [
-            "TargetListItemsView","TargetDetail"
+          "name": "Routingdetails",
+          "pattern": "view2/{obj}",
+          "target":[
+            "TargetRoutingDetails"
+          ]
+        },
+        {
+          "name": "RouteView3",
+          "pattern": "view3",
+          "target":[
+            "TargetRoute"
           ]
         }
       ],
       "targets": {
-        "TargetListItemsView": {
-          "id": "ListItemsView",
-          "name": "ListItemsView",
-          "controlAggregation": "masterPages",
-          "level":1
+        "TargetView1": {
+          "id": "View1",
+          "name": "View1"
         },
-        "TargetEmptyView": {
-          "id": "idEmpty",
-          "name": "emptyView",
-          "controlAggregation": "detailPages",
-          "level":1
-        },"TargetDetail": {
-          "id": "idEmpty",
-          "name": "DetailView",
-          "controlAggregation": "detailPages",
-          "level":2
+        "TargetRoutingDetails":{
+          "id": "detailspage",
+          "name" : "miningDetail"      
+        },
+        "TargetRoute":{
+          "id": "creation",
+          "name" : "forCreation"      
         }
       }
     },
     "rootView": {
-      "viewName": "app.splitapp143.view.App",
+      "viewName": "app.darshanamining19.view.App",
       "type": "XML",
       "id": "App"
     }
   },
   "sap.cloud": {
     "public": true,
-    "service": "appsplitapp143"
+    "service": "appdarshanamining19"
   }
 }

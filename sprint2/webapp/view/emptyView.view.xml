@@ -1,0 +1,7 @@
+<mvc:View controllerName="app.sprint2.controller.emptyView"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="idEmp" title = "{i18n>emp}">
+    </Page>
+</mvc:View>

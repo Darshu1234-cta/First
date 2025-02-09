@@ -1,7 +1,0 @@
-<mvc:View controllerName="app.splitappb12.controller.emptyView"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="idEmp" title="{i18n>emp}">
-    
-    </Page>
-</mvc:View>

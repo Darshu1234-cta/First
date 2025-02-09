@@ -1,0 +1,106 @@
+<mvc:View controllerName="app.darshanamining19.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    xmlns:t="sap.ui.table"
+    xmlns:comp="sap.ui.comp.smartfilterbar"
+    xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+
+ <comp:SmartFilterBar id="smartFilterBar" entitySet="WASet"
+            persistencyKey="miningFilterBar"  
+            >
+        </comp:SmartFilterBar>
+        <!-- <ComboBox items="{/WA}" selectionChange="onSelect">
+        <items>
+        <core:Item key="{LocationId}" text="{LocationId}"></core:Item>
+        </items>
+         </ComboBox> -->
+       
+        <!-- Table with Filters -->
+        <t:Table id="table1" enableSelectAll="false" rows="{/WASet}" rowSelectionChange="onRowSelect">
+            <t:columns>
+                <t:Column id="c1">
+                    <Label id="l1" text="Location Id"></Label>
+                    <t:template>
+                        <Text id="T1" text="{LocationId}"></Text>
+                    </t:template>
+                </t:Column>
+
+                <t:Column id="c2">
+                    <Label id="l2" text="Location Description"></Label>
+                    <t:template>
+                        <Text id="T2" text="{LocationDes}"></Text>
+                    </t:template>
+                </t:Column>
+
+                <!-- <t:Column id="c3">
+                    <Label id="l3" text="Mining Resource"></Label>
+                    <t:template>
+                        <Text id="T3" text="{MiningRsc}"></Text>
+                    </t:template>
+                </t:Column> -->
+                
+                <!-- <t:Column id="c7">
+                    <Label id="l7" text="Cost"></Label>
+                    <t:template>
+                        <Text id="T7" text="{Cost}"></Text>
+                    </t:template>
+                </t:Column>
+                <t:Column id="c4">
+                    <Label id="l4" text="Cost Center"></Label>
+                    <t:template>
+                        <Text id="T4" text="{CostCenter}"></Text>
+                    </t:template>
+                </t:Column>
+                <t:Column id="c5">
+                    <Label id="l5" text="Mineral Type"></Label>
+                    <t:template>
+                        <Text id="T5" text="{MineralType}"></Text>
+                    </t:template>
+                </t:Column>            
+  -->
+                <!-- <t:Column id="C12">
+                    <Label id="l12" text="Minerals"></Label>
+                    <t:template>
+                        <Text id="T12" text="{Minerals}"></Text>
+                    </t:template>
+                </t:Column> -->
+               
+                <!-- <t:Column id="c23">
+                    <Label id="l23" text="No of drills"></Label>
+                    <t:template>
+                        <Text id="T23" text="{DrillCount}"></Text>
+                    </t:template>
+                </t:Column> -->
+                <!-- <t:Column id="c34">
+                    <Label id="l34" text="total man days spent"></Label>
+                    <t:template>
+                        <Text id="T34" text="{man_days}"></Text>
+                    </t:template>
+                </t:Column>
+                <t:Column id="c17">
+                    <Label id="l17" text="PROBABLE_OUTCOME"></Label>
+                    <t:template>
+                        <Text id="T17" text="{prob_outcome}"></Text>
+                    </t:template>
+                </t:Column>
+                <t:Column id="c14">
+                    <Label id="l14" text="DRILL_DATE"></Label>
+                    <t:template>
+                        <Text id="T14" text="{drill_date}"></Text>
+                    </t:template>
+                </t:Column>
+              -->
+       
+            </t:columns>
+           
+        </t:Table>
+        <footer>
+<OverflowToolbar>
+<ToolbarSpacer/>
+<Button text="create" press="onPress"/>
+</OverflowToolbar>
+</footer>           
+    </Page>
+</mvc:View>

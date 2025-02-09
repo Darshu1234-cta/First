@@ -1,0 +1,31 @@
+<mvc:View controllerName="app.sprint2.controller.ListItemsView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+                <headerContent>
+            <Button icon="sap-icon://sort" press="onSort"></Button>
+
+        </headerContent>
+        <subHeader>
+            <OverflowToolbar>
+                <SearchField search="onSearch" id="idSearch" liveChange="onSearch"/>
+            </OverflowToolbar>
+        </subHeader>
+        <content>
+            <List items="{toolModel>/location}" id="idListItem" mode="SingleSelectMaster"
+            selectionChange="onItemPress">
+                <items>
+                    <ObjectListItem icon="{toolModel>icon}" intro="{toolModel>LocationID}" number="{toolModel>TotalCost}"
+                    numberState="Success"
+                         title="{toolModel>LocationName}">
+                       
+                    </ObjectListItem>
+                 
+                   
+                </items>
+            </List>
+        </content>
+    </Page>
+</mvc:View>

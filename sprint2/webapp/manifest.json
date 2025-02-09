@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "app.splitapp143",
+    "id": "app.sprint2",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,14 +13,15 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
       "version": "1.16.3",
-      "toolsId": "e18aaee8-c40a-4e1e-8901-a41caab4e860"
+      "toolsId": "cb1ca175-b37e-4823-900d-b339b8010260"
     },
     "crossNavigation": {
       "inbounds": {
-        "toolsapp-display": {
-          "semanticObject": "toolsapp",
+        "miningapp-display": {
+          "semanticObject": "miningapp",
           "action": "display",
           "title": "{{flpTitle}}",
+          "subTitle": "{{flpSubtitle}}",
           "signature": {
             "parameters": {},
             "additionalParameters": "allowed"
@@ -62,14 +63,9 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "app.splitapp143.i18n.i18n"
+          "bundleName": "app.sprint2.i18n.i18n"
         }
-      },
-      "toolModel":{
-        "type": "sap.ui.model.json.JSONModel",
-        "uri": "/model/mockData/toolsData.json"
       }
- 
     },
     "resources": {
       "css": [
@@ -86,9 +82,9 @@
         "transition": "slide",
         "type": "View",
         "viewType": "XML",
-        "path": "app.splitapp143.view",
+        "path": "app.sprint2.view",
         "async": true,
-        "viewPath": "app.splitapp143.view"
+        "viewPath": "app.sprint2.view"
       },
       "routes": [
         {
@@ -98,6 +94,7 @@
             "TargetListItemsView","TargetEmptyView"
           ]
         },
+ 
         {
           "name": "RouteDetail",
           "pattern": "detail/{ind}",
@@ -105,35 +102,37 @@
             "TargetListItemsView","TargetDetail"
           ]
         }
+       
       ],
       "targets": {
         "TargetListItemsView": {
           "id": "ListItemsView",
           "name": "ListItemsView",
           "controlAggregation": "masterPages",
-          "level":1
+          "level": 1
         },
         "TargetEmptyView": {
           "id": "idEmpty",
           "name": "emptyView",
           "controlAggregation": "detailPages",
-          "level":1
-        },"TargetDetail": {
-          "id": "idEmpty",
-          "name": "DetailView",
-          "controlAggregation": "detailPages",
-          "level":2
+          "level": 1
+        },
+        "TargetDetail": {
+        "id": "idDetail",
+        "name": "DetailView",
+        "controlAggregation": "detailPages",
+        "level": 2
         }
       }
     },
     "rootView": {
-      "viewName": "app.splitapp143.view.App",
+      "viewName": "app.sprint2.view.App",
       "type": "XML",
       "id": "App"
     }
   },
   "sap.cloud": {
     "public": true,
-    "service": "appsplitapp143"
+    "service": "appsprint2"
   }
 }

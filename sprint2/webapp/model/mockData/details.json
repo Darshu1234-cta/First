@@ -1,0 +1,60 @@
+{
+    "detail": [
+      {
+        "resources": "Gold, Silver",
+        "cost": 500000,
+        "man_days": 1200,
+        "probability_of_success": 0.75,
+        "ContractorName":"Smith"
+      },
+      {
+        "resources": "Iron, Copper",
+        "cost": 300000,
+        "man_days": 900,
+        "probability_of_success": 0.65,
+        "ContractorName":"Alice"
+      },
+      {
+        "resources": "Diamond, Platinum",
+        "cost": 1000000,
+        "man_days": 2500,
+        "probability_of_success": 0.85,
+        "ContractorName":"Bob"
+      },
+      {
+        "resources": "Coal, Natural Gas",
+        "cost": 200000,
+        "man_days": 700,
+        "probability_of_success": 0.55,
+        "ContractorName":"David"
+      },
+      {
+        "resources": "Uranium, Rare Earth Metals",
+        "cost": 800000,
+        "man_days": 1800,
+        "probability_of_success": 0.80,
+        "ContractorName":"Taylor"
+      },
+      {
+        "resources": "Silicon, Coal",
+        "cost": 750000,
+        "man_days": 180,
+        "probability_of_success": 0.80,
+        "ContractorName":"Archer"
+      },
+      {
+        "resources": "Cobalt, Nickel",
+        "cost": 900000,
+        "man_days": 1800,
+        "probability_of_success": 0.81,
+        "ContractorName":"Parker"
+      },
+      {
+        "resources": "Bronze, Coal",
+        "cost": 600000,
+        "man_days": 1200,
+        "probability_of_success": 0.50,
+        "ContractorName":"Bailey"
+      }
+    ]
+  }
